@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-    <html lang="ja"></html>
-<head>
-    <link rel="stylesheet" href="kadai.css" type="text/css"/>
-    <title>フォームの作成</title>
-</head>
-<body>
+<html lang="ja">
+  <head>
+    <title>Step4</title>
+  </head>
+  <body>
     <form>
-        <ul>
-            <li>ユーザー名：<input type="text" id="name" name="name"></li>
-            <li>タスク：<textarea name="comment" id="task" cols="20" rows="2"></textarea></li>
-            <li><input type="button" onclick="onClickButton()" value="登録"></li>
-        </ul>
+      <ul>
+        <li>
+          <label for="name">ユーザ名:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="task">タスク:</label>
+          <textarea id="task" name="user_task"></textarea>
+        </li>
+        <li class="button">
+          <button type="button" onclick="onClickButton()">登録</button>
+        </li>
+      </ul>
     </form>
-    <div id="table">
-        <h2>登録したタスク</h2>
-        <table class="content-table">
-            <thead>
-              <tr>
-                <th>nama</th>
-                <th>task</th>
-              </tr>
-            </thead>
-            <tbody id="taskList"></tbody>  <!-- ここに配列の中身を表示させたい -->
-          </table>
-    </div>
+    <div id="todo-list"></div>
     <script src="form.js"></script>
-
-</body>
+  </body>
+</html>
