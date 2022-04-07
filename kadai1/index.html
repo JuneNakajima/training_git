@@ -12,8 +12,18 @@
             <li><input type="button" onclick="onClickButton()" value="登録"></li>
         </ul>
     </form>
-
-
+    <div id="table">
+        <h2>登録したタスク</h2>
+        <table class="content-table">
+            <thead>
+              <tr>
+                <th>nama</th>
+                <th>task</th>
+              </tr>
+            </thead>
+            <tbody id="taskList"></tbody>  <!-- ここに配列の中身を表示させたい -->
+          </table>
+    </div>
     <script src="form.js"></script>
 
 </body>
